@@ -7,12 +7,6 @@
 
 
 
-
-|---|---|---|
-| Author → Book | One-to-Many | `HasOne(Author).WithMany(Books).HasForeignKey(AuthorId)` |
-| Book ↔ Borrower | Many-to-Many | من خلال `Loan` (`UsingEntity<Loan>()`) |
-| Loan | Join entity | Composite PK (`BookId`, `BorrowerId`) + `LoanDate`, `ReturnDate` |
-
 ## ER Diagram
 
 ```mermaid
